@@ -4418,7 +4418,7 @@ var Easyrtc = function() {
                   "Attempt to add additional stream before establishing the base call.");
         }
         else {
-            var sdp = msgData.sdp;
+            var sdp = (typeof msgData.sdp === 'object') ? msgData.sdp : msgData;
             var pc = peerConns[easyrtcid].pc;
 
             var setLocalAndSendMessage1 = function(sessionDescription) {
@@ -4483,7 +4483,7 @@ var Easyrtc = function() {
             logDebug("setPeerListener failed: __gotAddedMediaStream Unknow easyrtcid " + easyrtcid);
         }
         else {
-            var sdp = msgData.sdp;
+            var sdp = (typeof msgData.sdp === 'object') ? msgData.sdp : msgData;
             if (sdpRemoteFilter) {
                 sdp.sdp = sdpRemoteFilter(sdp.sdp);
             }
