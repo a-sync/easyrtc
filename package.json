@@ -19,10 +19,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/priologic/easyrtc.git"
+    "url": "https://github.com/a-sync/easyrtc.git"
   },
   "bugs": {
-    "url": "https://github.com/priologic/easyrtc/issues"
+    "url": "https://github.com/a-sync/easyrtc/issues"
   },
   "main": "index",
   "dependencies": {
