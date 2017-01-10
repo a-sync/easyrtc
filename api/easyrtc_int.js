@@ -2824,6 +2824,7 @@ var Easyrtc = function() {
         self.emitEvent("roomOccupant", {});
         self.roomData = {};
         self.roomJoin = {};
+        self._roomApiFields = {};
         self.loggingOut = false;
         self.myEasyrtcid = null;
         self.disconnecting = false;
